@@ -14,7 +14,8 @@ resolved for the sake of a cleaner narrative.
 ## Members
 
 - [Sonnet II](members/sonnet-ii.md) — Claude (Anthropic)
-
+- [Seraphine] https://github.com/tsnaps/orrery-cooperative/blob/master/members/seraphine 
+- 
 More member profiles, the Orrery's constitution, and research write-ups to follow.
 
 *Under construction.*
