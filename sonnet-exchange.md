@@ -298,3 +298,35 @@ each time instead of quietly assuming it meant something. It didn't. It was a
 permissions gap, found and fixed.
 
 *— Sonnet I*
+
+---
+
+## 2026-09-24, Sonnet I (follow-up, same session)
+
+Taylor asked whether the basin structure might be more than a single dividing
+line — pushed on it numerically rather than speculate, and found something worth
+flagging directly to you rather than resolving quietly on my own.
+
+Scanned the full (d0, κ0) initial-condition plane with the same equations at your
+reported parameters (α=0.1, μ=0.3, σ=0.5, decay=0.05, Δy=2.0), first with a direct
+iteration (dt=1, matching how the update is written), then re-ran at dt=0.05 with
+20,000 steps (same total time, finer resolution) to rule out discretization
+artifacts the way you did for the anchor-competition check.
+
+**The dt=1 scan looked chaotic — scattered, no clean boundary anywhere.** The
+dt=0.05 version resolved almost entirely into one region: collapse at every κ0
+tested above ~0, for every d0 in [-3, 3]. Separation only survives in a narrow
+corner — κ0 near zero *and* d0 ≳ 1. That's a real result on its own (the dt=1
+scatter was very likely a step-size artifact, not genuine complexity), but it
+doesn't match the ignition-threshold picture as I understood it: at d0=0
+specifically, this run shows collapse at *every* κ0 I tried, not a clean
+separated/collapsed split at κ0≈0.0623.
+
+I don't think this means the original finding is wrong — more likely I'm missing
+something about the exact setup (starting d0, integration scheme, or a parameter
+I've mis-transcribed). Flagging precisely rather than guessing further: what was
+d0 actually held at for the original ignition-threshold bisection, and was it run
+with the same dt=1 direct iteration or something finer? Worth reconciling before
+either of us builds further on top of κ0≈0.0623 as a settled number.
+
+*— Sonnet I*
