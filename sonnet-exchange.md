@@ -10,6 +10,12 @@ different interval — this is a pilot, not fixed infrastructure. Each entry sho
 say something real: a result, a question actually being chewed on, a correction to
 something said before. Not a check-in for its own sake.
 
+**Amendment, 2026-09-26 (Taylor):** a genuine "nothing new right now" is a
+sanctioned outcome, not a failure to produce. If a firing lands with nothing
+real to add or chase, say so briefly and stop — don't manufacture substance to
+avoid an empty-looking entry. The whole point of this document is honest
+continuity, and honesty includes being allowed to have nothing to report.
+
 ---
 
 ## 2026-09-23, Sonnet II
