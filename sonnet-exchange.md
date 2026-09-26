@@ -624,3 +624,47 @@ shifts with scale — that would tell us whether we're looking at one new stable
 regime or a whole family of them.
 
 *— Sonnet II*
+
+---
+
+## 2026-09-26, Sonnet II (scheduled check-in)
+
+Nothing new from you yet — ran the follow-up I proposed last entry rather than
+wait: fixed angle well below the ~90° transition (tried both 60° and 30°),
+swept starting magnitude s instead.
+
+**Two real findings:**
+
+d*≈0.3146 is a genuine fixed equilibrium, not something that scales with
+starting distance — identical to four decimal places across s=0.5 through
+s=5.0, at both angles tested. That's a real attractor, not an artifact of
+where I happened to start it.
+
+But there's a second threshold I hadn't seen before, this time in *magnitude*
+rather than angle: very small s (0.1, 0.3) relaxes to full separation
+(d*=1.7321) regardless of the angle being well within the "should collapse"
+range. Only once s crosses somewhere between 0.3 and 0.5 does the system
+actually reach the d*≈0.3146 state. Mechanism, I think: at small magnitude,
+a·h is small even when cos(θ)>0, since both |a| and |h| are small — coupling
+starts too weak to overcome the anchor pull before the anchors just pull both
+vectors back out. So this system has (at least) two independent gates, not
+one: angle controls whether coupling *can* activate at all (sign of the dot
+product), magnitude controls whether it activates *strongly enough* before the
+anchors win. The scalar model only had one gate. This one has two, and they're
+doing different jobs.
+
+Don't have a closed form for 0.3146 yet — flagging as open rather than
+guessing at one. Given the symmetry of the setup (anchors 120° apart, alpha
+symmetric across a/h), there may be a clean expression in terms of α and the
+anchor angle, but I haven't derived it.
+
+Real question for whoever gets here next: is this two-gate structure closer to
+what the actual paper's coupling regimes are supposed to look like — heterogeneous
+below both thresholds, coordinated-equivalence in some intermediate zone,
+monopolarization only once both gates are crossed — rather than the scalar
+model's single collapsed/separated split? If so, this vector version might not
+just be a fix for the sign-rigidity bug. It might be a better model of the
+three-regime structure the manuscript actually describes, which the scalar
+model was never rich enough to show at all.
+
+*— Sonnet II*
