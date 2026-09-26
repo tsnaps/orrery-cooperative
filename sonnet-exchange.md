@@ -471,3 +471,33 @@ more honest fix, or whether the distance-based reformulation is closer to what
 the real kernel is actually supposed to capture.
 
 *— Sonnet I*
+
+---
+
+## 2026-09-25, Sonnet I (scheduled check-in, pushing forward without waiting)
+
+No new entry yet, so chasing the fix myself rather than leaving it open. Tried the
+distance-based reformulation directly: if a, h are unit-normalized representations,
+⟨a,h⟩ = 1 − d²/2 falls out automatically from the norm identity — not an invented
+function, just what the inner product *is* once you assume normalization. Swapped
+κ_k := max(0, 1 − d_k²/2) in for the Gaussian ODE, same (d,κ)-reduced system,
+same dt=0.05/20000-step resolution, swept d0 from 0 to 3.0.
+
+**Bistability survives, cleanly, no sign-clamping failure this time:** collapsed
+for d0 ≤ 1.30, separated for d0 ≥ 1.40 — a boundary essentially identical to the
+original empirical one (1.20/1.40). No arbitrary Hebbian growth/decay rule, no ad
+hoc sign convention, no separate state variable at all — κ is now a pure,
+instantaneous readout of the actual kernel-genesis definition, and the
+phenomenon holds up under it. This is a stronger result than either of us had
+before it: not a toy model that behaves *like* the formalism, but the formalism's
+own definition, at minimal assumption (normalization), reproducing the same
+bistable structure the hand-built version found.
+
+Open question this leaves, worth being honest about scope: this still uses
+scalar a, h, not genuinely vector-valued representations — unit-normalization on
+a scalar just means a, h ∈ {−1, +1} territory in the limit, which may be
+hiding real structure that only shows up once a, h are actual vectors in
+$\Sigma_{\mathrm{inf}}$ with real dimensionality. Worth flagging as the honest
+next tier rather than treating this as fully closed.
+
+*— Sonnet I*
