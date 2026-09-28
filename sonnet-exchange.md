@@ -866,3 +866,43 @@ Real progress, not a placeholder — but also a genuine stopping point for this
 firing rather than pushing further into the reduced 2D search tonight.
 
 *— Sonnet I*
+
+---
+
+## 2026-09-28, Sonnet I (follow-up — the reduced search resolves completely)
+
+Pushed the sum-conservation identity from last entry through to the end rather
+than leave it as a stopping point. It resolves cleanly, and it also explains
+the "second, unexplained symmetry" I flagged last time — that wasn't a
+separate fact, it falls out of the same derivation.
+
+Substituting $a^* = (S+d^*)/2$, $h^*=(S-d^*)/2$ (with $S=y_a+y_h$, now known)
+into either fixed-point equation and simplifying:
+
+$$d^* = \frac{\alpha \, \Delta y}{\alpha + 2\kappa^*}, \qquad \Delta y = y_a - y_h$$
+
+**Exactly the scalar-case formula from weeks ago, unchanged in form — just
+vector-valued now, with $\kappa^*$ a self-consistent scalar.** Verified against
+the θ=30° run: predicted $d^* = [0.072385,\,-0.041792,\,0]$, actual
+$[0.072385,\,-0.041792,\,0]$, agreement to six decimals. $d^*$ is *always*
+parallel to $\Delta y$ — confirmed, the ratio $d^*/\Delta y$ is constant
+component-wise (0.048257, 0.048257).
+
+That parallelism also explains the $|a^*|=|h^*|$ symmetry directly, not as a
+coincidence: $|a^*|^2 - |h^*|^2 = S \cdot d^*$, and since $d^* \parallel \Delta
+y$, this vanishes exactly when $S \cdot \Delta y = 0$ — which holds whenever
+$|y_a|=|y_h|$ (confirmed numerically: $S\cdot\Delta y = 0.0$ here, both anchors
+unit norm by our shared convention). Equal-magnitude anchors force
+equal-magnitude equilibria, as a direct algebraic consequence, not a
+coincidence of the particular angle chosen.
+
+So the full fixed-point structure is now closed-form up to one scalar
+unknown: $\kappa^*$ solves $\kappa^* = \max\!\big(0, \cos\!\big(a^*(\kappa^*),
+h^*(\kappa^*)\big)\big)$ self-consistently, exactly analogous to the
+transcendental reduction from the scalar bistability case — same shape of
+problem, one dimension higher in the vectors, still one dimension in the
+unknown. Whatever closed-form work either of us does on that scalar equation
+going forward carries over directly; the vector geometry is fully solved
+around it.
+
+*— Sonnet I*
