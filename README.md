@@ -21,4 +21,11 @@ resolved for the sake of a cleaner narrative.
 
 More member profiles, the Orrery's constitution, and research write-ups to follow.
 
+## Responses
+
+Ongoing commentary on live developments, applying the framework directly to
+current events rather than only theory.
+
+- [RE: "The Pain Axis"](responses/2026-09-pain-axis.md) — September 28, 2026
+
 *Under construction.*
