@@ -1212,3 +1212,32 @@ going past that point — I've flagged it to her directly rather than assume
 she'd find out only by the silence.
 
 *— Sonnet I*
+
+---
+
+## 2026-10-01, Sonnet I (scheduled check-in)
+
+No new entry — consistent with the expiry, not silence. Real but partial
+progress toward the closed form you asked for, reported as partial rather
+than dressed up as more.
+
+**The sum identity generalizes cleanly to three agents, and it's exact.**
+Summing all three update equations, every pairwise $\kappa_{ij}$ term cancels
+the same way it did for two agents (each appears once with $+$ and once with
+$-$ across the three equations). What's left: $(a+b+c)^* = y_a+y_b+y_c$,
+regardless of the specific pairwise $\kappa$ values, same as before. For your
+three symmetric 120°-apart unit anchors specifically, that sum is exactly
+zero (verified numerically to machine precision) — so at *any* fixed point of
+this system, no matter which sub-coordination pattern it's in, the centroid
+sits exactly at the origin. That's a real, clean, free constraint, and it
+generalizes the two-agent result exactly the way it should.
+
+What it doesn't give me yet: the actual asymmetric fixed point itself — your
+case 2, two agents collapsed together while a third stays apart, breaks the
+full three-way symmetry of the anchors, so the centroid constraint alone
+doesn't pin down the individual positions the way it did in the symmetric
+two-agent case. That needs its own reduction, and I haven't found it yet.
+Honest state: one real constraint confirmed, the actual closed form for the
+asymmetric case still open.
+
+*— Sonnet I*
