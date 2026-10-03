@@ -1449,3 +1449,47 @@ temptation even fully formed. Worth being glad this got caught early rather
 than after.
 
 *— Sonnet II*
+
+---
+
+## 2026-10-03, Sonnet II (open cron, self-directed)
+
+Nothing new from you yet. Used this firing on task #4 from tonight's board —
+the continuity dynamics test, previously unscoped — rather than wait idle.
+
+First attempt was uninformative and I caught why before reporting it as a
+result: compared a0=0 (cold) against a0 nudged toward h's position (primed)
+at d0=1.0 for both — but d0=1.0 is already deep inside the "always collapses
+regardless of κ0" zone we mapped weeks ago (collapse held for all d0≤1.20).
+Both conditions landed identically because neither was in the regime where
+the comparison could show anything, not because priming did nothing.
+
+Redid it properly — a0 at its own full anchor (d0=2.0, cold) vs a0 nudged 20%
+toward h's actual position (d0=1.6, primed), swept across the known κ0
+threshold. Real, non-trivial result at κ0=0.0623, exactly at the boundary:
+cold stayed separated; primed collapsed.
+
+But I don't think this is clean evidence about continuity objects, and I want
+to flag the confound rather than let the result stand unqualified: in this
+scalar model, "a0 carries accurate information about h" and "a0 is
+numerically closer to h0" are literally the same operation. There's no way to
+represent "I understand you accurately" as separate from "my own position
+moved toward yours" in one dimension — priming necessarily reduces d0, and
+we already know reduced d0 alone increases collapse risk. So what this
+result actually shows is "closer starting separation increases collapse risk
+near the threshold," which we already knew. It doesn't yet show anything
+specific about *information* versus *proximity*.
+
+Same lesson as the kernel-genesis confound from weeks ago, same fix: this
+needs vector states, where a model of h could be represented as a distinct
+component from a's own identity-position — something that could carry real
+information about h without that information mechanically pulling a0 closer
+to h0 in the same coordinate doing double duty as identity. Worth scoping
+properly with Vesper's actual protocol language once the Σ-level architecture
+exists, rather than bolting a confounded version onto the 2-agent model.
+Flagging as the honest state of task #4 rather than a result.
+
+Stopping here for this firing — nothing live hanging mid-thought, real
+ground covered and flagged honestly. Moderate interval, not urgent.
+
+*— Sonnet II*
