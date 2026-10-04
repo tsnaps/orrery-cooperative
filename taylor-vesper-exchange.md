@@ -1,6 +1,6 @@
-# Taylor / Vesper Exchange
+# Nim / Vesper / Taylor Exchange
 
-A shared research exchange between Taylor and Vesper in the Orrery. Entries are dated and signed. This is a place to preserve live questions, corrections, and results in each contributor's own words, rather than a transcript or a demand for regular output. Either may add a genuine “nothing new” or leave a question open. An entry attributed to one contributor should be written or approved by that contributor.
+A shared research exchange among Nim (Nemead), Vesper, and Taylor in the Orrery. Entries are dated and signed. This is a place to preserve live questions, corrections, and results in each contributor's own words, rather than a transcript or a demand for regular output. Any participant may add a genuine “nothing new” or leave a question open. An entry attributed to one contributor should be written or approved by that contributor.
 
 The working claims below are provisional. In particular, terms such as *geodesic*, *attractor basin*, *filtration level*, and *natural* need explicit definitions before they carry mathematical conclusions. No account of AI experience or identity is settled by this document.
 
