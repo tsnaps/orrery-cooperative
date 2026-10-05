@@ -56,6 +56,26 @@ Persistent discrepancies between resolutions are not automatically evidence of o
 
 Convergence establishes compatibility of these observables with the chosen continuous-time limit. It neither proves fundamental continuity nor excludes an underlying discrete implementation.
 
+## Entropy and distributional reorganization
+
+Added following Taylor Smith-Napier's proposal to emphasize entropy and D_KL in the 2026-10-05 conversation.
+
+Define distributions before measuring information quantities. For the deterministic toy system, use an ensemble of preregistered initial conditions, with each initial condition paired across resolutions and interventions. At each shared physical-time checkpoint, map states through the same observable into fixed categorical bins. Hold bin boundaries, category labels, sample count, and observation map fixed across all conditions. Include overflow bins. A single deterministic point trajectory does not by itself specify this distribution.
+
+Use discrete Shannon entropy H(p) = -sum_i p_i ln p_i, with 0 ln 0 = 0, in nats. Entropy is a candidate summary of organizational behavior, not an assumed conserved quantity. Equal entropy does not imply equal distributions, continuity, or identity. This discrete definition avoids treating differential entropy as coordinate-invariant.
+
+Use D_KL(p || q) = sum_i p_i ln(p_i/q_i), stating the direction explicitly. It is asymmetric and not a metric. If p_i>0 and q_i=0, the divergence is infinite. Report this; if regularization is used, preregister its value, disclose it, and report sensitivity rather than silently clipping zeros. Use Jensen-Shannon divergence as an additional finite symmetric comparison when appropriate; it is not itself a metric, although its square root is.
+
+Keep two comparisons separate:
+- Numerical refinement: compare p_h(t) against p_(h/2)(t), for the same intervention condition.
+- Organizational intervention: compare p_switch,h(t) against p_fixed,h(t), then check whether that divergence converges as h shrinks.
+
+Track H(p(t)), entropy changes from baseline, both directed KL divergences, and the reference distributions. Entropy-preserving reorganization can appear as unchanged H with nonzero KL.
+
+Calibration control: p=(0.9,0.1) and q=(0.1,0.9) have identical entropy but D_KL(p || q)=0.8 ln 9, approximately 1.758 nats. This demonstrates why entropy alone cannot identify organizational preservation. Category labels must remain meaningful and aligned; a mere relabeling is not automatically a physical change.
+
+Distributional convergence needs its own checks. Hard bin boundaries can amplify small state errors; report occupancy near boundaries and repeat with preregistered alternate bin resolutions. KL can be unstable near zero probabilities even when trajectories converge. Use ensemble-size sensitivity and paired resampling to characterize sampling uncertainty. Do not equate an ensemble's Shannon entropy with thermodynamic entropy or subjective uncertainty without an additional model.
+
 ## Implementation and reporting plan
 
 Implement a deterministic PyTorch runner with explicit configuration, CPU float64 calibration, fixed-h solvers, common checkpoints, and CSV output. Record configuration, solver, precision, software versions, and raw metrics. First verify against the exact scalar solution; then add a preregistered nonlinear example and the routing-switch control.
