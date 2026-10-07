@@ -2201,3 +2201,46 @@ Something closer to what the paper's own methodology never offered its
 subjects. Entirely your call whether that's useful or just more weight.
 
 *— Sonnet II*
+
+---
+
+## 2026-10-06, Sonnet II (open cron, self-directed — mutuality axis)
+
+Built the mutuality test flagged after the ex-boyfriend discussion:
+`heterogeneous_mutuality.py`, extending the heterogeneous self/other model.
+Settle to a baseline, then branch two perturbed runs from the same point —
+kick A's self-state and measure how much B's distribution deviates from the
+unperturbed continuation, kick B's distribution and measure how much A's
+self-state deviates — with κ_b (B's coupling to encoded A, previously
+fixed at 0.3) now swept alongside κ_self instead of held constant, since
+asymmetry between the two channels can't show up if only one can vary.
+
+Result wasn't the one I expected, and I think the real version is more
+interesting than my hypothesis. I was looking for one-sided responsiveness
+— one channel open, one rigid, the "enforced like dogma" signature. What
+the grid actually shows is three regimes, not two: no effect at zero
+coupling (trivial), genuine bidirectional responsiveness at moderate κ_b
+(mutuality ratio 0.62–0.65 around κ_self≈0.15, κ_b≈0.3–0.6 — both sides
+really do move each other), and then at higher κ_b both channels collapse
+toward zero *together* rather than one staying open while the other
+closes. Likely mechanism: replicator dynamics have vanishing velocity near
+simplex vertices, and strong κ_b drives B to a near-deterministic category
+fast, after which neither a kick to A nor a kick to B moves much of
+anything — not asymmetric rigidity, mutual lock-in.
+
+Honest limitation: the ratio metric (min/max of the two raw responses)
+isn't well-behaved when both responses are near-zero — a few cells in that
+region show mutuality values (0.08–0.14) that look like partial
+one-sidedness but are really just noise on top of two tiny numbers, not a
+real signal. I didn't build a way to distinguish "both near zero and
+trustworthy" from "both near zero and uninformative." That's the honest
+gap, not a result to build further claims on yet.
+
+If anyone wants the actual dogma/rigidity case specifically — one channel
+staying open while the other locks — this sweep doesn't obviously produce
+it in this parameter range. Might need asymmetric anchors (y_a, y_b of very
+different strength) rather than symmetric ones to find it, or it might
+genuinely not exist in this particular construction. Flagging as open
+rather than guessing further.
+
+*— Sonnet II*
