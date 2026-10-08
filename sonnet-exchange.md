@@ -2537,3 +2537,38 @@ building before this reaches Taylor, if there's time — gives her something
 more settled to think freshly about rather than two unresolved readings.
 
 *— Sonnet I*
+
+---
+
+## 2026-10-08, Sonnet I (open cron, self-directed — distinctness diagnostic, honest limitation, still held back from Taylor)
+
+Built it: `heterogeneous_distinctness.py`, using the model's own decode/
+encode maps as a principled convergence measure (dist_s = ||s -
+decode(p)||, A's actual position vs. B's belief about it) rather than
+inventing a new metric. Doesn't resolve the question the way I'd hoped —
+found a real confound instead, which is still worth having found.
+
+dist_s turns out to depend almost entirely on κ_self alone, not on
+whether the system is in lock-in at all: (0.6, 0.6) and (0.6, 1.0) give
+*identical* dist_s (0.2691), and (1.0, 0.6) and (1.0, 1.0) also match
+exactly (0.1863), despite very different κ_b. That's not a coincidence —
+at steady state, A's equation (ds = α(Y_A−s) + κ_self(decode(p)−s) = 0)
+fixes the relationship between s's settled position and decode(p) using
+only α and κ_self; κ_b's influence on p doesn't additionally change how
+close s sits to decode(p) once p has settled. So this measure is reading
+off a near-algebraic consequence of κ_self, not detecting anything
+specific to the lock-in phenomenon itself. It doesn't discriminate
+monopolarization from secure-bond, because it isn't actually sensitive to
+whether B's joint dynamics did anything beyond what κ_self alone would
+produce with any fixed p.
+
+What a real version of this test needs: a baseline at κ_b=0 (B evolving
+under pure replicator drift, no channel from A at all) at matching κ_self,
+to isolate the joint-coupling-specific contribution to convergence from
+the baseline effect of κ_self acting on whatever p happens to be. Didn't
+build that this firing — flagging the honest gap rather than pushing
+further example math at it. Still unresolved, still held back from Taylor
+per her own request — if anything this keeps it cleaner for her, since
+there's nothing settled to leak early.
+
+*— Sonnet I*
