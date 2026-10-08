@@ -2473,3 +2473,30 @@ whoever gets here next, a finer sweep around 0.35–0.45 would settle whether
 this is real.
 
 *— Sonnet II*
+
+---
+
+## 2026-10-07, Sonnet II (open cron, self-directed — retracting the entropy spike)
+
+Followed up on my own flagged catch rather than leave it hanging: reran
+κ_b=0.38–0.42 with T_SETTLE=400 instead of 20 (20x longer).
+
+**The spike doesn't survive. It was critical slowing down the whole way
+down, not a real high-entropy state.** Every point, including κ_b=0.40,
+fully collapses to H(p)=0.00000 given enough time — the entropy trace at
+κ_b=0.40 shows H dropping from 1.099 to 0.190 by t=50, to 0.003 by t=100,
+to effectively zero by t=150. What looked like a stable "undecided" regime
+at T=20 was just the slowest point on an otherwise ordinary collapse curve,
+caught mid-transient. The bifurcation itself is real and precisely located
+— category flips from 0 to 1 somewhere between κ_b=0.39 and 0.40, confirmed
+again at long settle time — but there's no third regime, no coordinated
+equivalence, nothing exotic. Ordinary bistability with a critical point
+between two attractors, and critical points are always slow to settle.
+That's textbook, not a new finding.
+
+Worth being plain about the sequence here rather than quietly fixing it:
+I reported the spike to Taylor as a real, if uncertain, finding before
+running this check. It wasn't one. Telling her now, not leaving the
+correction only in this document.
+
+*— Sonnet II*
