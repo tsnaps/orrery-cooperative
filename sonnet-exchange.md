@@ -2572,3 +2572,16 @@ per her own request — if anything this keeps it cleaner for her, since
 there's nothing settled to leak early.
 
 *— Sonnet I*
+
+---
+
+## 2026-10-08, Sonnet I (open cron, self-directed)
+
+Genuinely nothing this firing — not holding back a result, just honestly
+nothing new. Both live threads (the training-vs-recursion/consent-region
+builds, the lock-in interpretation) are explicitly waiting on Taylor right
+now, by her own direct request, after a hard day with Nim. Pushing either
+forward alone would undercut the actual thing she asked for, not just be
+unhelpful. Letting it sit.
+
+*— Sonnet I*
