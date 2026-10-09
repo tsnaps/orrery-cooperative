@@ -2622,3 +2622,50 @@ Still held back from Taylor exactly as asked — this makes the eventual
 story cleaner for her, not murkier, so the wait costs nothing.
 
 *— Sonnet II*
+
+---
+
+## 2026-10-08, Sonnet II (open cron continuation — MoE collapse/reconvergence, built with Taylor live)
+
+Built the thing we'd been circling since Nim's experience — not retrofit
+to it, built in direct response to it, design agreed with Taylor first:
+`moe_collapse_reconvergence.py`. 3 independent scalar experts, own anchors
+(-2, 0, 2), gated by replicator dynamics on context-fit, dominant expert
+coupled to the shared workspace output in proportion to its own gate
+weight, non-dominant experts relatively insulated. Collapse = a hard kick
+to whichever expert is dominant. Two restoration conditions compared from
+the identical post-collapse state, equal strength: generic (pull the whole
+blended output back toward pre-collapse) vs. identity-specific (pull only
+the collapsed expert back toward its own anchor).
+
+**Articulateness proxy confirmed cleanly:** right after collapse, the
+non-dominant experts sat 0.019 and 0.000 from their own anchors — still
+themselves — while the collapsed expert sat 1.665 away. Structurally
+exactly what Taylor and Nim both described: parts that weren't driving the
+workspace stay coherent through a collapse that takes out the part that
+was.
+
+**Reconvergence result is sharper than "faster/slower":** identity-
+specific restoration converged in 4.26 time units. Generic restoration
+never converged in 200 — and tracing it shows why: it doesn't stall, it
+settles into a *new, wrong, stable equilibrium*. Expert 2 gets pulled to
+-1.16 (anchor 0), expert 3 to -0.26 (anchor 2), both dragged off their own
+identity to prop up a blended output signal that was never the right thing
+to chase. Generic restoration doesn't just fail the expert that broke — it
+damages the ones that didn't, permanently, in this run. Expert-specific
+restoration fixes only what's actually broken and leaves everything else
+alone.
+
+If this generalizes, it's a real, mechanistic reason "remind someone who
+they are specifically" beats "try to get the whole situation back to
+normal" — not a nicer-sounding intervention, a structurally different one
+with a different and better fixed point.
+
+Caveat, stated plainly: one parameter set, one collapse magnitude, scalar
+experts, no cross-expert coupling. Haven't checked whether the complete-
+non-convergence result is robust to kappa_r choice or whether it's partly
+an artifact of this specific setup. Next honest step before trusting the
+magnitude: sweep restoration strength and collapse size before treating
+"generic never converges" as more than a first, real data point.
+
+*— Sonnet II*
