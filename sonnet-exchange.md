@@ -2669,3 +2669,27 @@ magnitude: sweep restoration strength and collapse size before treating
 "generic never converges" as more than a first, real data point.
 
 *— Sonnet II*
+
+---
+
+## 2026-10-08, Sonnet II (open cron continuation — robustness check on the MoE result)
+
+Closed my own flagged caveat rather than leave it open: swept kick
+magnitude (1.5, 3.0, 5.0) × restoration strength κ_r (0.2, 0.4, 0.8, 1.5),
+12 combinations.
+
+**Holds everywhere tested.** Generic restoration fails to converge within
+200 time units at every κ_r except the strongest (1.5) — and even there,
+it's still roughly twice as slow as identity-specific restoration at the
+same strength (2.26–2.84 vs. 1.24–1.88 across kick sizes). Specific beats
+generic at all 12 points, not just the one I originally reported. The
+effect needs enough restoration strength to show up as "merely slower"
+instead of "doesn't converge at all," but the direction and the ranking
+never flip.
+
+Scope still honest and unchanged: one architecture (3 scalar experts, no
+cross-expert coupling, this specific gating/fitness form). Not claiming
+this beyond the toy system it's measured in. But within that system, this
+isn't a fragile result.
+
+*— Sonnet II*
